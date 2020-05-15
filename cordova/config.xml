@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="josiahking.jobman" version="0.1.0">
+  <name>Jobman</name>
+  <description>
+    Example Tabris.js App
+  </description>
+  <author email="josiahaccounts@gmail.com">
+    Josiah King
+  </author>
+  <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
+</widget>
