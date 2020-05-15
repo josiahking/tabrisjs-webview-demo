@@ -8,5 +8,5 @@
     Josiah King
   </author>
   <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
-  <plugin name="cordova-plugin-x-toast" spec="^2.*" />
+  <plugin name="cordova-plugin-network-information" spec="^2.*" />
 </widget>

@@ -6,7 +6,6 @@
     "start": "tabris serve -a"
   },
   "dependencies": {
-    "cordova-plugin-x-toast": "^2.7.2",
     "tabris": "~3.4.0"
   },
   "devDependencies": {
