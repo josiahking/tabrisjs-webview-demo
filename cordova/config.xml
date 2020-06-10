@@ -9,4 +9,5 @@
   </author>
   <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
   <plugin name="cordova-plugin-network-information" spec="^2.*" />
+  <plugin name="aerogear-cordova-oauth2" spec="^1.*" />
 </widget>
