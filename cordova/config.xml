@@ -9,4 +9,7 @@
   </author>
   <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
   <plugin name="cordova-plugin-network-information" spec="^2.*" />
+  <plugin name="cordova-plugin-googleplus" spec="^5.*" >
+    <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.447391654587-q42jr9vsi1po5cinfqp3182nmou91udu" />
+  </plugin>
 </widget>
