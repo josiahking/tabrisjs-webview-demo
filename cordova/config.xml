@@ -7,6 +7,9 @@
   <author email="josiahaccounts@gmail.com">
     Josiah King
   </author>
+  <allow-navigation href="https://www.google.com/recaptcha/*" />
+  <allow-intent href="https://*.google.com/*"/>
+  <access origin="http://*.google.com" allows-arbitrary-loads-in-media='true' allows-arbitrary-loads-in-web-content='true' allows-local-networking='true' />
   <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
   <plugin name="cordova-plugin-network-information" spec="^2.*" />
   <plugin name="cordova-plugin-googleplus" spec="^5.*" >

@@ -43,11 +43,16 @@ let noNetworkPage = new Composite({
 	background: '#1da1ff'
 }).onSelect(() => {
 	if(checkConnection() != Connection.NONE && checkConnection != Connection.UNKNOWN){
-		noNetworkPage.dispose();
-		webView.appendTo(contentView);
+		webView.url = website;
+		webView.on({
+			load: () => {
+				noNetworkPage.dispose();
+				webView.appendTo(contentView);
+			}
+		});
 	}
 }));
-let website = "http://jobman.uk.tempcloudsite.com/";//"http://192.168.43.252:9000/";//http://jobman.uk.tempcloudsite.com
+let website = "https://jobman.uk.tempcloudsite.com/";//"http://192.168.43.252:9000/";//https://jobman.uk.tempcloudsite.com
 
 const webView = new WebView({
 	left: 0, right: 0, top: 0, bottom: 0,
@@ -124,8 +129,13 @@ function retryConnection(){
 		showRetry();
 	}
 }
+webView.postMessage('apploaded',website);
+window.addEventListener('message', function(e){
+	console.log(e)
+});
 webView.on({
 	message: (e) => {
+		console.log(e.data);
 		if(e.data == "showretry"){
 			showRetry();
 		}
