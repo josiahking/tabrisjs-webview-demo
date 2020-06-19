@@ -7,8 +7,20 @@
   <author email="josiahaccounts@gmail.com">
     Josiah King
   </author>
-  <!--<allow-navigation href="https://www.google.com/recaptcha/*" />
-  <allow-intent href="https://*.google.com/*"/>-->
+  <allow-navigation href="https://*.tempclousite.com/*" />
+  <allow-navigation href="http://*.tempclousite.com/*" />
+  <!-- Allow links to web pages to open in a browser -->
+  <allow-intent href="http://*/*" />
+  <allow-intent href="https://*/*" />
+  <!-- Allow SMS links to open messaging app -->
+  <allow-intent href="sms:*" />
+  <!-- Allow tel: links to open the dialer -->
+  <allow-intent href="tel:*" />
+  <!-- Allow geo: links to open maps -->
+  <allow-intent href="geo:*" />
+  <!-- Allow mailto: links to open mail -->
+  <allow-intent href="mailto:*" />
+  <!-- Allow access to this URL for CSP -->
   <access origin="https://*.google.com" />
   <access origin="https://*.hcaptcha.com" />
   <access origin="https://google.com" />
