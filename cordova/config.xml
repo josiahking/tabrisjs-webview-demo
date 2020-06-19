@@ -21,10 +21,11 @@
   <!-- Allow mailto: links to open mail -->
   <allow-intent href="mailto:*" />
   <!-- Allow access to this URL for CSP -->
-  <access origin="https://*.google.com" />
+  <access origin="*" />
+  <!--<access origin="https://*.google.com" />
   <access origin="https://*.hcaptcha.com" />
   <access origin="https://google.com" />
-  <access origin="https://hcaptcha.com" />
+  <access origin="https://hcaptcha.com" />-->
   <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
   <plugin name="cordova-plugin-network-information" spec="^2.*" />
   <plugin name="cordova-plugin-whitelist" spec="1.3.*" />
